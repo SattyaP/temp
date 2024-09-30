@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Group List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        #qrcode {
+            margin-bottom: 20px;
+        }
+
+        .group {
+            margin-bottom: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>WhatsApp Group List</h1>
+    <div id="qr-container">
+        <h2>Scan QR Code to Login</h2>
+        <img class="hidden" id="qrcode" src="" alt="QR Code" />
+        <div id="loader">Loading...</div>
+    </div>
+    <div>
+        <h2>Your Groups:</h2>
+        <div id="groups"></div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+
+</html>
